@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; text-align: center; padding: 20px; background: #fafafa; }
+#login-screen, #app { max-width: 400px; margin: auto; }
+#gallery img { width: 100%; max-width: 100%; margin-top: 10px; border-radius: 10px; }
+textarea { width: 100%; height: 100px; margin-top: 10px; }
+input, button, textarea { font-size: 16px; padding: 8px; }

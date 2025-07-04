@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Aşkımız 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-screen">
+    <h2>Şifreyi Girin</h2>
+    <input type="password" id="pwd">
+    <button onclick="login()">Giriş</button>
+  </div>
+  <div id="app" style="display:none;">
+    <h1>🎁 Aşk Galerimiz</h1>
+    <input type="file" id="fileInput" accept="image/*"><br><br>
+    <div id="gallery"></div>
+    <textarea id="noteText" placeholder="Anı yaz (kalıcı)"></textarea><br>
+    <button onclick="addNote()">Not Ekle</button>
+    <div id="notes"></div>
+  </div>
+  <script src="cloudinary.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
