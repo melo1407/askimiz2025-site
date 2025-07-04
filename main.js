@@ -1,13 +1,13 @@
 const PASSWORD = "askimiz2025";
-let token = null;
 
 function login() {
-  if (document.getElementById("pwd").value === PASSWORD) {
-    token = true;
+  const entered = document.getElementById("pwd").value;
+  if (entered === PASSWORD) {
     document.getElementById("login-screen").style.display = "none";
     document.getElementById("app").style.display = "block";
-    loadNotes();
-  } else alert("Şifre yanlış.");
+  } else {
+    document.getElementById("error-msg").textContent = "Şifre yanlış 💔";
+  }
 }
 
 async function uploadImage(file) {
@@ -35,8 +35,4 @@ function addNote() {
   p.textContent = txt;
   document.getElementById("notes").prepend(p);
   document.getElementById("noteText").value = "";
-}
-
-function loadNotes() {
-  // Geliştirilebilir: localStorage veya Cloud tabanlı
 }

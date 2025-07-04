@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aşkımız 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="login-screen">
-    <h2>Şifreyi Girin</h2>
-    <input type="password" id="pwd">
+  <div class="background"></div>
+  <div id="login-screen" class="glass">
+    <h1>Bu bizim aşkımız için 💘</h1>
+    <input type="password" id="pwd" placeholder="Şifreyi gir...">
     <button onclick="login()">Giriş</button>
+    <p id="error-msg"></p>
   </div>
-  <div id="app" style="display:none;">
-    <h1>🎁 Aşk Galerimiz</h1>
+  <div id="app" style="display: none;">
+    <h2>Galeri & Anılar</h2>
     <input type="file" id="fileInput" accept="image/*"><br><br>
     <div id="gallery"></div>
-    <textarea id="noteText" placeholder="Anı yaz (kalıcı)"></textarea><br>
+    <textarea id="noteText" placeholder="Anını yaz..."></textarea><br>
     <button onclick="addNote()">Not Ekle</button>
     <div id="notes"></div>
   </div>
